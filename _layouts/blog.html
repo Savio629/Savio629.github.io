@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+    
+      <div>
+        <div style="background-image:url('{{ page.image }}')">
+        </div>
+  
+        <h1>{{ page.title }}</h1>
+        <p>
+          {{ content }}
+        </p>
+      </div>
+
+      {% include footer.html %}
+
+    </body>
+    
+</html>
+
+
