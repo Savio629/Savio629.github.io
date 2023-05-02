@@ -5,8 +5,16 @@
 
     <body>
 
-        <!-- Blogs -->
-    
+        <!-- Blog posts -->
+        {% for blog in paginator.blogs %}
+        <div>
+            <a href="{{ blog.permalink }}">
+                <h3>{{ blog.title }}</h3>
+            </a>
+            <div>{{ blog.description }}</div>
+        </div>
+        {% endfor %}
+
         {{ content }}
 
         {% include footer.html %}

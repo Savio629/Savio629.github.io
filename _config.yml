@@ -39,15 +39,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-paginate: 5
-paginate_path: "/page:num/"
-
 pagination:
-  enabled: true
-  collection: 'blogs'
+  limit: false
+  per_page: 2
+  title_suffix: " (page :num)"
 
 collections:
   blogs:
     output: true
-    permalink: /:collection/:slug/
-
+    permalink: /:collection/:title/
